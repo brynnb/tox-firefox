@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "ToX",
+  "version": "1.0",
+
+  "description": "Redirect to x.com when the browser is on xcancel.com",
+
+  "icons": {
+    "48": "icons/tox-48.svg"
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "host_permissions": [
+    "*://*.xcancel.com/*"
+  ],
+
+  "background": {
+    "scripts": ["tox.js"]
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{135c3428-66bc-4b5b-9503-282dc00802e7}"
+    }
+  }
+}
